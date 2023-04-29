@@ -47,5 +47,44 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a / b;
 	}
+	
+	public int multiplicacionIncrementada ( int factor1 , int limite ){
+
+	    int factor2 = 1;
+
+	    for ( int i = 0; i < limite ; i++ ){
+	        factor2 = factor2 * factor1;
+	    }
+
+	    return factor2; 
+	}
+	
+	public boolean isPar ( int numero ){
+
+	    boolean esPar;
+
+	    if ( numero % 2 == 0) {
+	        esPar = true;
+	    } else {
+	        esPar = false;
+	    }
+
+	    return esPar;
+	}
+
+
+	public String divisionInfinita(int a){
+
+	    String r = "";
+	    int v = a;
+	    int v1;
+
+	    while ( v > 0) {
+	        v1 = v % 2;
+	        r = v1 + r;
+	        v = v / 2;
+	    }
+	    return r;
+	}
 
 }
