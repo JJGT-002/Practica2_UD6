@@ -4,7 +4,6 @@ package ed.jorge;
  * Clase que se encarga de sumar, restar, multiplicar o dividir dos números
  * @author jota
  * @version 3.7
- *@
  */
 public class Calculadora {
 		
