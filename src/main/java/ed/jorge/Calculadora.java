@@ -48,6 +48,12 @@ public class Calculadora {
 		return a / b;
 	}
 	
+	/**
+	 * Multiplica el numero entero factor2 por factor1, guardando el resultado en factor2
+	 * @param factor1 numero entero por el que factor2 es multiplicado en cada iteración del bucle for
+	 * @param limite numero entero que delimita las iteraciones del bucle for
+	 * @return factor2 tras haber finalizado todas las iteraciones del bucle for
+	 */
 	public int multiplicacionIncrementada ( int factor1 , int limite ){
 
 	    int factor2 = 1;
@@ -59,6 +65,11 @@ public class Calculadora {
 	    return factor2; 
 	}
 	
+	/**
+	 * Indica si el numero es par o impar
+	 * @param numero numero entero por el que se obtiene el módulo de 2 para saber si es par o impar
+	 * @return true si el numero es par y false si es impar
+	 */
 	public boolean isPar ( int numero ){
 
 	    boolean esPar;
@@ -72,17 +83,21 @@ public class Calculadora {
 	    return esPar;
 	}
 
-
-	public String divisionInfinita(int a){
+	/**
+	 * Bucle infinito en el que mientras dividendo sea mayor que 0, dividendo guardará el resultado de la división de dividendo entre 2
+	 * @param numero valor de dividendo antes de empezar el bucle
+	 * @return r, aunque nunca devolverá r debido a que siempre se quedará dividiendo 1 / 1
+	 */
+	public String divisionInfinita(int numero){
 
 	    String r = "";
-	    int v = a;
+	    int dividendo = numero;
 	    int v1;
 
-	    while ( v > 0) {
-	        v1 = v % 2;
+	    while ( dividendo > 0) {
+	        v1 = dividendo % 2;
 	        r = v1 + r;
-	        v = v / 2;
+	        dividendo = dividendo / 2;
 	    }
 	    return r;
 	}
